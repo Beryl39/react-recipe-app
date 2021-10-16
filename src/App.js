@@ -53,6 +53,7 @@ const App = () => {
   //-------------------------------------------
   return (
     <div className="App">
+      <h1 className="title">Edamam Recipe Search</h1>
       <form
         onSubmit={getSearch}
         className="search-form">
@@ -68,14 +69,17 @@ const App = () => {
         >Search</button>
       </form>
 
-      {recipes.map(recipe => (
-        <Recipe
-          key={recipe.recipe.label}
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-        />
-      ))}
+      <div className="single-recipe">
+        {recipes.map(recipe => (
+          <Recipe
+            key={recipe.recipe.label}
+            title={recipe.recipe.label}
+            calories={recipe.recipe.calories}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
+      </div>
     </div>
   );
 }

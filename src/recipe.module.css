@@ -1,0 +1,17 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css?family=Source+San:400,700&display=swap');
+
+.recipe {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgb(43, 41, 44, 0.15);
+    max-width: 400px;
+    padding: 30px 50px;
+    margin: 25px 35px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
